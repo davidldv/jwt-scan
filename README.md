@@ -1,6 +1,15 @@
 # jwt-scan
 
+[![npm version](https://img.shields.io/npm/v/jwt-scan.svg)](https://www.npmjs.com/package/jwt-scan)
+[![npm downloads](https://img.shields.io/npm/dm/jwt-scan.svg)](https://www.npmjs.com/package/jwt-scan)
+[![license](https://img.shields.io/npm/l/jwt-scan.svg)](https://github.com/davidldv/jwt-scan/blob/main/LICENSE)
+[![node](https://img.shields.io/node/v/jwt-scan.svg)](https://www.npmjs.com/package/jwt-scan)
+
 CLI scanner for common JWT misconfigurations. Probes a static token, a live HTTP endpoint, or both.
+
+```bash
+npx jwt-scan --token "$TOKEN" --url "GET https://api.example.com/me"
+```
 
 Checks:
 

@@ -5,12 +5,20 @@
   "keywords": ["jwt", "security", "scanner", "appsec", "cli", "audit"],
   "license": "MIT",
   "author": "David Londoño",
+  "homepage": "https://github.com/davidldv/jwt-scan#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidldv/jwt-scan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidldv/jwt-scan/issues"
+  },
   "type": "module",
   "bin": {
     "jwt-scan": "dist/cli.js"
   },
   "main": "dist/cli.js",
-  "files": ["dist", "wordlists", "README.md"],
+  "files": ["dist", "wordlists", "README.md", "LICENSE"],
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/cli.ts",
