@@ -26,12 +26,16 @@ program
 
 const opts = program.opts();
 
-const tokenStr =
+const tokenStr = (
   opts.token ??
-  (opts.tokenFile ? (await readFile(opts.tokenFile, "utf8")).trim() : undefined);
+  (opts.tokenFile ? (await readFile(opts.tokenFile, "utf8")).trim() : undefined)
+)?.trim() || undefined;
 
 if (!tokenStr && !opts.url) {
   program.error("provide --token, --token-file, or --url");
+}
+if (opts.token !== undefined && !tokenStr) {
+  program.error("--token was empty (shell variable likely unset)");
 }
 
 const ctx: ScanContext = {};
