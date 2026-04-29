@@ -1,8 +1,15 @@
 {
   "name": "jwt-scan",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI scanner for JWT misconfigurations: alg=none, key confusion, weak secrets, kid injection, claim validation.",
-  "keywords": ["jwt", "security", "scanner", "appsec", "cli", "audit"],
+  "keywords": [
+    "jwt",
+    "security",
+    "scanner",
+    "appsec",
+    "cli",
+    "audit"
+  ],
   "license": "MIT",
   "author": "David Londoño",
   "homepage": "https://github.com/davidldv/jwt-scan#readme",
@@ -18,7 +25,12 @@
     "jwt-scan": "dist/cli.js"
   },
   "main": "dist/cli.js",
-  "files": ["dist", "wordlists", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "wordlists",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/cli.ts",
